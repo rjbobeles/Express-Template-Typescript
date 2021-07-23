@@ -1,0 +1,17 @@
+{
+  "diff": true,
+  "spec": "tests/**/*.test.ts",
+  "extension": ["js", "cjs", "mjs", "ts"],
+  "require": [
+    "ts-node/register",
+    "tests/hooks/sinon.ts",
+    "tests/hooks/server.ts"
+  ],
+  "package": "./package.json",
+  "reporter": "spec",
+  "slow": "75",
+  "timeout": "20000",
+  "ui": "bdd",
+  "watch-files": ["tests/**/*.test.ts"],
+  "watch-ignore": ["lib/vendor", "node_modules"]
+}
